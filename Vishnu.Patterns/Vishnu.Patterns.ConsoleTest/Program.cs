@@ -19,9 +19,18 @@ namespace Vishnu.Patterns.ConsoleTest
                 switch(choice)
                 {
                     case "2":
+                        Console.Write("Abstract Factory Pattern.....");
                         AbstratFactoryPatternTest.Perform();
                         break;
-                        
+                    case "3a":
+                        Console.WriteLine("Factory Method Pattern with DI...");
+                        FactoryPatternWithDITest.Perform();
+                        break;
+                    case "3b":
+                        Console.WriteLine("Factory Method Pattern without DI...");
+                        FactoryPatternWithoutDITest.Perform();
+                        break;
+
                 }
             } while (choice != "0");
 
@@ -31,9 +40,12 @@ namespace Vishnu.Patterns.ConsoleTest
 
         private static void PrintMenu()
         {
-            Console.WriteLine("");
-            Console.WriteLine("2. AbstractFactoryPattern");
-            Console.WriteLine("");
+            Console.WriteLine("********** Menu  **********************");
+            Console.WriteLine("0. Exit");
+            Console.WriteLine("2. Abstract Factory Pattern");
+            Console.WriteLine("3a. Factory Method Pattern with DI");
+            Console.WriteLine("3b. Factory Mehtod Pattern without DI");
+            Console.WriteLine("***************************************");
         }
     }
 }
