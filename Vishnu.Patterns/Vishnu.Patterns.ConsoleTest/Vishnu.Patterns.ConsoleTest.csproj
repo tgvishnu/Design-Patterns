@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FFE39C98-1BB8-4A07-8724-800A6A0B57F3}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{51F1F690-6FC2-4687-927B-1B4ACB98D534}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Vishnu.Patterns</RootNamespace>
-    <AssemblyName>Vishnu.Patterns</AssemblyName>
+    <RootNamespace>Vishnu.Patterns.ConsoleTest</RootNamespace>
+    <AssemblyName>Vishnu.Patterns.ConsoleTest</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -40,25 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Creational\AbstractFactoryPattern\AbstractProduct\INormalPhone.cs" />
-    <Compile Include="Creational\AbstractFactoryPattern\AbstractFactory\IPhoneFactory.cs" />
-    <Compile Include="Creational\AbstractFactoryPattern\AbstractProduct\ISmartPhone.cs" />
-    <Compile Include="Creational\AbstractFactoryPattern\Client\PhoneClient.cs" />
-    <Compile Include="Creational\AbstractFactoryPattern\ConcreteFactory\NokiaFactory.cs" />
-    <Compile Include="Creational\AbstractFactoryPattern\ConcreteFactory\SamsungFactory.cs" />
-    <Compile Include="Creational\AbstractFactoryPattern\ConcreteProduct\Nokia1600.cs" />
-    <Compile Include="Creational\AbstractFactoryPattern\ConcreteProduct\NokiaPixel.cs" />
-    <Compile Include="Creational\AbstractFactoryPattern\ConcreteProduct\SamsungGuru.cs" />
-    <Compile Include="Creational\AbstractFactoryPattern\ConcreteProduct\SamungGalaxy.cs" />
-    <Compile Include="Creational\SingletonPattern\DoubleCheckSingleton.cs" />
-    <Compile Include="Creational\SingletonPattern\FullyLazySingleton.cs" />
-    <Compile Include="Creational\SingletonPattern\LazySingleton.cs" />
-    <Compile Include="Creational\SingletonPattern\StaticSingleton.cs" />
-    <Compile Include="Creational\SingletonPattern\SimpleSingleton.cs" />
-    <Compile Include="Creational\SingletonPattern\SimpleThreadSafeSingleton.cs" />
+    <Compile Include="AbstratFactoryPatternTest.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Vishnu.Patterns\Vishnu.Patterns.csproj">
+      <Project>{ffe39c98-1bb8-4a07-8724-800a6a0b57f3}</Project>
+      <Name>Vishnu.Patterns</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
