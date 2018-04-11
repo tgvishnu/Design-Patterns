@@ -82,6 +82,16 @@
     <Compile Include="Creational\AbstractFactoryPattern\ConcreteProduct\NokiaPixel.cs" />
     <Compile Include="Creational\AbstractFactoryPattern\ConcreteProduct\SamsungGuru.cs" />
     <Compile Include="Creational\AbstractFactoryPattern\ConcreteProduct\SamungGalaxy.cs" />
+    <Compile Include="Creational\BuilderPattern\BatteryTypes.cs" />
+    <Compile Include="Creational\BuilderPattern\Builder\IPhoneBuilder.cs" />
+    <Compile Include="Creational\BuilderPattern\ConcreteBuilder\SymbionPhoneBuilder.cs" />
+    <Compile Include="Creational\BuilderPattern\ConcreteBuilder\WindowsPhoneBuilder .cs" />
+    <Compile Include="Creational\BuilderPattern\ConcreteBuilder\AndriodPhoneBuilder.cs" />
+    <Compile Include="Creational\BuilderPattern\Director\Manufacturer.cs" />
+    <Compile Include="Creational\BuilderPattern\OperatingSystemTypes.cs" />
+    <Compile Include="Creational\BuilderPattern\Product\MobilePhone.cs" />
+    <Compile Include="Creational\BuilderPattern\ScreenTypes.cs" />
+    <Compile Include="Creational\BuilderPattern\StylusTypes.cs" />
     <Compile Include="Creational\FactoryPattern\WithDI\CompositionRoot.cs" />
     <Compile Include="Creational\FactoryPattern\WithDI\ConcreteCreater\DefaultPaymentGatewayFactory.cs" />
     <Compile Include="Creational\FactoryPattern\WithDI\ConcreteProduct\NullPaymentGateway.cs" />

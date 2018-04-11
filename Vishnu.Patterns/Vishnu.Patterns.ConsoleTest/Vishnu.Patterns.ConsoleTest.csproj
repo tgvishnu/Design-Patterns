@@ -75,6 +75,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BuilderPatternTest.cs" />
     <Compile Include="FactoryPatternWithoutDITest.cs" />
     <Compile Include="FactoryPatternWithDITest.cs" />
     <Compile Include="AbstratFactoryPatternTest.cs" />
