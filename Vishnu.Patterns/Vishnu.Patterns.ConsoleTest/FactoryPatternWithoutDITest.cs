@@ -18,6 +18,7 @@ namespace Vishnu.Patterns.ConsoleTest
             gateway.Invoke();
             gateway = factory.Create(Gateways.ProtocolBase);
             gateway.Invoke();
+            Console.WriteLine("");
         }
     }
 }

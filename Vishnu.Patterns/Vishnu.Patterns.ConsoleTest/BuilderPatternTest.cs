@@ -22,6 +22,7 @@ namespace Vishnu.Patterns.ConsoleTest
             phoneBuilder = new SymbionPhoneBuilder();
             manufacturer.Construct(phoneBuilder);
             Console.WriteLine("\n\nNew phone build : \n" + phoneBuilder.Phone.ToString());
+            Console.WriteLine("");
         }
     }
 }

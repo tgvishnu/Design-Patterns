@@ -19,6 +19,9 @@ namespace Vishnu.Patterns.ConsoleTest
                 choice = Console.ReadLine();
                 switch(choice)
                 {
+                    case "-1":
+                        Console.Clear();
+                        break;
                     case "2":
                         Console.Write("Abstract Factory Pattern.....");
                         AbstratFactoryPatternTest.Perform();
@@ -35,6 +38,10 @@ namespace Vishnu.Patterns.ConsoleTest
                         Console.WriteLine("Builder pattern...");
                         BuilderPatternTest.Perform();
                         break;
+                    case "5":
+                        Console.WriteLine("Prototype pattern...");
+                        PrototypePatternTest.Perform();
+                        break;
 
                 }
             } while (choice != "0");
@@ -46,11 +53,13 @@ namespace Vishnu.Patterns.ConsoleTest
         private static void PrintMenu()
         {
             Console.WriteLine("********** Menu  **********************");
+            Console.WriteLine("-1. Clear Screen");
             Console.WriteLine("0.  Exit");
             Console.WriteLine("2.  Abstract Factory Pattern");
             Console.WriteLine("3a. Factory Method Pattern with DI");
             Console.WriteLine("3b. Factory Mehtod Pattern without DI");
             Console.WriteLine("4.  Builder Pattern");
+            Console.WriteLine("5.  Prototype Pattern");
             Console.WriteLine("***************************************");
         }
     }

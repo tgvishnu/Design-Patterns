@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{51F1F690-6FC2-4687-927B-1B4ACB98D534}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{98FD3759-F249-416C-89BF-54459BD4F310}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Vishnu.Patterns.ConsoleTest</RootNamespace>
-    <AssemblyName>Vishnu.Patterns.ConsoleTest</AssemblyName>
+    <RootNamespace>Vishnu.Patterns.Creational.FactoryPattern</RootNamespace>
+    <AssemblyName>Vishnu.Patterns.Creational.FactoryPattern</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -75,39 +72,31 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PrototypePatternTest.cs" />
-    <Compile Include="BuilderPatternTest.cs" />
-    <Compile Include="FactoryPatternWithoutDITest.cs" />
-    <Compile Include="FactoryPatternWithDITest.cs" />
-    <Compile Include="AbstratFactoryPatternTest.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WithDI\CompositionRoot.cs" />
+    <Compile Include="WithDI\ConcreteCreater\DefaultPaymentGatewayFactory.cs" />
+    <Compile Include="WithDI\ConcreteProduct\NullPaymentGateway.cs" />
+    <Compile Include="WithDI\ConcreteProduct\ProtocolBasePaymentGateway.cs" />
+    <Compile Include="WithDI\ConcreteProduct\SwiftPaymentGateway.cs" />
+    <Compile Include="WithDI\ConcreteProduct\WellsFargoGateway.cs" />
+    <Compile Include="WithDI\Creater\IPaymentGatewayFactory.cs" />
+    <Compile Include="WithDI\Gateways.cs" />
+    <Compile Include="WithDI\Product\IPaymentGateWay.cs" />
+    <Compile Include="WithoutDI\ConcreteCreater\DefaultPaymentGatewayFactory.cs" />
+    <Compile Include="WithoutDI\ConcreteProduct\NullPaymentGateway.cs" />
+    <Compile Include="WithoutDI\ConcreteProduct\ProtocolBasePaymentGateway.cs" />
+    <Compile Include="WithoutDI\ConcreteProduct\SwiftPaymentGateway.cs" />
+    <Compile Include="WithoutDI\ConcreteProduct\WellsFargoGateway.cs" />
+    <Compile Include="WithoutDI\Creater\IPaymentGatewayFactory.cs" />
+    <Compile Include="WithoutDI\Gateways.cs" />
+    <Compile Include="WithoutDI\Product\IPaymentGateWay.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AbstractFactoryPattern\AbstractFactoryPattern.csproj">
-      <Project>{78876047-20b4-4148-a197-3bca5ffe5d52}</Project>
-      <Name>AbstractFactoryPattern</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BuilderPattern\BuilderPattern.csproj">
-      <Project>{3cb8ac7e-9f34-485f-8796-0d2f752bd806}</Project>
-      <Name>BuilderPattern</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\FactoryMethodPattern\FactoryMethodPattern.csproj">
-      <Project>{98fd3759-f249-416c-89bf-54459bd4f310}</Project>
-      <Name>FactoryMethodPattern</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PrototypePattern\PrototypePattern.csproj">
-      <Project>{99612c90-30e9-448d-9a9b-249e98513a8b}</Project>
-      <Name>PrototypePattern</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SingletonPattern\SingletonPattern.csproj">
-      <Project>{e868bff9-4cfb-41e9-a8c4-fdb09927186f}</Project>
-      <Name>SingletonPattern</Name>
-    </ProjectReference>
+    <Content Include="FactoryMethodPatricipants.JPG" />
+    <Content Include="UML_FactoryMethodPattern.JPG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
