@@ -4,8 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Vishnu.Patterns.Behavioural.AdapterPattern
+namespace Vishnu.Patterns.Structural.AdapterPattern
 {
+    /// <summary>
+    /// Bird adapter ... IBird behaves as IToyDuck
+    /// </summary>
     public class BirdAdapter : IToyDuck
     {
         IBird _bird = null;

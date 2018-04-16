@@ -75,11 +75,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PrototypePatternTest.cs" />
-    <Compile Include="BuilderPatternTest.cs" />
-    <Compile Include="FactoryPatternWithoutDITest.cs" />
-    <Compile Include="FactoryPatternWithDITest.cs" />
-    <Compile Include="AbstratFactoryPatternTest.cs" />
+    <Compile Include="Structural\AdapterPatternTest.cs" />
+    <Compile Include="Creational\PrototypePatternTest.cs" />
+    <Compile Include="Creational\BuilderPatternTest.cs" />
+    <Compile Include="Creational\FactoryPatternWithoutDITest.cs" />
+    <Compile Include="Creational\FactoryPatternWithDITest.cs" />
+    <Compile Include="Creational\AbstratFactoryPatternTest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
