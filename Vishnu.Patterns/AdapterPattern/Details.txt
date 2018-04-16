@@ -1,0 +1,8 @@
+﻿Adapter design Pattern
+
+1. Works as a bridge between two incompatible interfaces
+
+Advantages:
+
+Disadvantages:
+

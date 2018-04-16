@@ -92,6 +92,10 @@
       <Project>{78876047-20b4-4148-a197-3bca5ffe5d52}</Project>
       <Name>AbstractFactoryPattern</Name>
     </ProjectReference>
+    <ProjectReference Include="..\AdapterPattern\AdapterPattern.csproj">
+      <Project>{20936a98-a2a4-49f6-8929-574da9ac402c}</Project>
+      <Name>AdapterPattern</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BuilderPattern\BuilderPattern.csproj">
       <Project>{3cb8ac7e-9f34-485f-8796-0d2f752bd806}</Project>
       <Name>BuilderPattern</Name>
