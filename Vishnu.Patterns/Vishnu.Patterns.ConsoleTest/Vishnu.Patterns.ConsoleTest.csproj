@@ -75,6 +75,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Structural\BridgePatternTest.cs" />
     <Compile Include="Structural\AdapterPatternTest.cs" />
     <Compile Include="Creational\PrototypePatternTest.cs" />
     <Compile Include="Creational\BuilderPatternTest.cs" />
@@ -96,6 +97,10 @@
     <ProjectReference Include="..\AdapterPattern\AdapterPattern.csproj">
       <Project>{20936a98-a2a4-49f6-8929-574da9ac402c}</Project>
       <Name>AdapterPattern</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BridgePattern\BridgePattern.csproj">
+      <Project>{40c35acc-a3c1-4091-b3d2-0e34573bd7d0}</Project>
+      <Name>BridgePattern</Name>
     </ProjectReference>
     <ProjectReference Include="..\BuilderPattern\BuilderPattern.csproj">
       <Project>{3cb8ac7e-9f34-485f-8796-0d2f752bd806}</Project>

@@ -51,14 +51,14 @@ namespace Vishnu.Patterns.ConsoleTest
 
         private static void PrintCreationalPatternMenu()
         {
-            Console.WriteLine("********** Creational Patterns **********");
-            Console.WriteLine("0.  Back to Main menu");
-            Console.WriteLine("1.  Abstract Factory Pattern");
-            Console.WriteLine("2a. Factory Method Pattern with DI");
-            Console.WriteLine("2b. Factory Mehtod Pattern without DI");
-            Console.WriteLine("3.  Builder Pattern");
-            Console.WriteLine("4.  Prototype Pattern");
-            Console.WriteLine("***************************************");
+            Console.WriteLine("\t********** Creational Patterns **********");
+            Console.WriteLine("\t0.  Back to Main menu");
+            Console.WriteLine("\t1.  Abstract Factory Pattern");
+            Console.WriteLine("\t2a. Factory Method Pattern with DI");
+            Console.WriteLine("\t2b. Factory Mehtod Pattern without DI");
+            Console.WriteLine("\t3.  Builder Pattern");
+            Console.WriteLine("\t4.  Prototype Pattern");
+            Console.WriteLine("\t***************************************");
         }
 
         private static void ProcessCreationalPattern()
@@ -97,9 +97,9 @@ namespace Vishnu.Patterns.ConsoleTest
 
         private static void PrintBehavioralPatternMenu()
         {
-            Console.WriteLine("**********  Behavioural Pattern **********");
-            Console.WriteLine("0.  Back to Main menu");
-            Console.WriteLine("***************************************");
+            Console.WriteLine("\t**********  Behavioural Pattern **********");
+            Console.WriteLine("\t0.  Back to Main menu");
+            Console.WriteLine("\t***************************************");
         }
 
         private static void ProcessBehaviouralPatten()
@@ -120,10 +120,11 @@ namespace Vishnu.Patterns.ConsoleTest
 
         private static void PrintStructuralPatternMenu()
         {
-            Console.WriteLine("**********  Structural Pattern **********");
-            Console.WriteLine("0.  Back to Main menu");
-            Console.WriteLine("1.  Adapter Pattern");
-            Console.WriteLine("***************************************");
+            Console.WriteLine("\t**********  Structural Pattern **********");
+            Console.WriteLine("\t0.  Back to Main menu");
+            Console.WriteLine("\t1.  Adapter Pattern");
+            Console.WriteLine("\t2.  Bridge Pattern");
+            Console.WriteLine("\t***************************************");
         }
 
         private static void ProcessStructuralPattern()
@@ -139,6 +140,10 @@ namespace Vishnu.Patterns.ConsoleTest
                     case "1":
                         Console.Write("Adapter Pattern.....");
                         AdapterPatternTest.Perform();
+                        break;
+                    case "2":
+                        Console.WriteLine("Bridge Pattern...");
+                        BridgePatternTest.Perform();
                         break;
                 }
             } while (choice != "0");
