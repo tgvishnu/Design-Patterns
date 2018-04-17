@@ -124,6 +124,7 @@ namespace Vishnu.Patterns.ConsoleTest
             Console.WriteLine("\t0.  Back to Main menu");
             Console.WriteLine("\t1.  Adapter Pattern");
             Console.WriteLine("\t2.  Bridge Pattern");
+            Console.WriteLine("\t3.  Composite Pattern");
             Console.WriteLine("\t***************************************");
         }
 
@@ -144,6 +145,10 @@ namespace Vishnu.Patterns.ConsoleTest
                     case "2":
                         Console.WriteLine("Bridge Pattern...");
                         BridgePatternTest.Perform();
+                        break;
+                    case "3":
+                        Console.WriteLine("Composite Pattern...");
+                        CompositePatternTest.Perform();
                         break;
                 }
             } while (choice != "0");
