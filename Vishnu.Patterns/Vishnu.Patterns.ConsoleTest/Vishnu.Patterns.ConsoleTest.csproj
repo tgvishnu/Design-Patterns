@@ -75,6 +75,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Structural\DecoratorPatternTest.cs" />
     <Compile Include="Structural\CompositePatternTest.cs" />
     <Compile Include="Structural\BridgePatternTest.cs" />
     <Compile Include="Structural\AdapterPatternTest.cs" />
@@ -110,6 +111,10 @@
     <ProjectReference Include="..\CompositePattern\CompositePattern.csproj">
       <Project>{7442a1a3-18ed-416e-9dcc-487b068f2c6f}</Project>
       <Name>CompositePattern</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DecoratorPattern\DecoratorPattern.csproj">
+      <Project>{1dc04196-791c-4da1-bf2b-d5e9ebd836a1}</Project>
+      <Name>DecoratorPattern</Name>
     </ProjectReference>
     <ProjectReference Include="..\FactoryMethodPattern\FactoryMethodPattern.csproj">
       <Project>{98fd3759-f249-416c-89bf-54459bd4f310}</Project>

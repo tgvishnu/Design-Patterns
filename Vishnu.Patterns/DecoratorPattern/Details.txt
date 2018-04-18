@@ -1,0 +1,3 @@
+﻿Decorator Pattern
+
+Decorator pattern achieves a single objective of dynamically adding responsibilities to any object.
