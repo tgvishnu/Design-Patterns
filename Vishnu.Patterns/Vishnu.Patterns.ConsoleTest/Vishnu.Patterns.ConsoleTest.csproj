@@ -75,15 +75,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Structural\DecoratorPatternTest.cs" />
-    <Compile Include="Structural\CompositePatternTest.cs" />
-    <Compile Include="Structural\BridgePatternTest.cs" />
-    <Compile Include="Structural\AdapterPatternTest.cs" />
-    <Compile Include="Creational\PrototypePatternTest.cs" />
-    <Compile Include="Creational\BuilderPatternTest.cs" />
-    <Compile Include="Creational\FactoryPatternWithoutDITest.cs" />
-    <Compile Include="Creational\FactoryPatternWithDITest.cs" />
-    <Compile Include="Creational\AbstratFactoryPatternTest.cs" />
+    <Compile Include="GOF\Structural\DecoratorPatternTest.cs" />
+    <Compile Include="GOF\Structural\CompositePatternTest.cs" />
+    <Compile Include="GOF\Structural\BridgePatternTest.cs" />
+    <Compile Include="GOF\Structural\AdapterPatternTest.cs" />
+    <Compile Include="GOF\Creational\PrototypePatternTest.cs" />
+    <Compile Include="GOF\Creational\BuilderPatternTest.cs" />
+    <Compile Include="GOF\Creational\FactoryPatternWithoutDITest.cs" />
+    <Compile Include="GOF\Creational\FactoryPatternWithDITest.cs" />
+    <Compile Include="GOF\Creational\AbstratFactoryPatternTest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

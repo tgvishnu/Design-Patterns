@@ -14,10 +14,54 @@ namespace Vishnu.Patterns.ConsoleTest
             do
             {
                 Console.WriteLine("\n");
-                PrintMenu();
+                PrintPatternsMenu();
                 Console.WriteLine("Enter you choice");
                 choice = Console.ReadLine();
                 switch(choice)
+                {
+                    case "-1":
+                        Console.Clear();
+                        break;
+                    case "1":
+                        ProcessGOFPatterns();
+                        break;
+                }
+            } while (choice != "0");
+
+            Console.WriteLine("Press any key to exit");
+            Console.ReadLine();
+        }
+
+        private static void PrintPatternsMenu()
+        {
+            Console.WriteLine("********** Menu  **********************");
+            Console.WriteLine("-1. Clear Screen");
+            Console.WriteLine("0.  Exit");
+            Console.WriteLine("1.  GOF Patterns");
+            Console.WriteLine("***************************************");
+        }
+
+
+        private static void PrintGOFMenu()
+        {
+            Console.WriteLine("********** Menu  **********************");
+            Console.WriteLine("\t-1. Clear Screen");
+            Console.WriteLine("\t0.  Exit");
+            Console.WriteLine("\t1.  Creational Patterns");
+            Console.WriteLine("\t2.  Structural Patterns");
+            Console.WriteLine("\t3.  Behavioral Patterns");
+            Console.WriteLine("***************************************");
+        }
+
+        private static void ProcessGOFPatterns()
+        {
+            string choice = string.Empty;
+            do
+            {
+                PrintGOFMenu();
+                Console.WriteLine("Select any choice ");
+                choice = Console.ReadLine();
+                switch (choice)
                 {
                     case "-1":
                         Console.Clear();
@@ -33,25 +77,12 @@ namespace Vishnu.Patterns.ConsoleTest
                         break;
                 }
             } while (choice != "0");
-
-            Console.WriteLine("Press any key to exit");
-            Console.ReadLine();
-        }
-
-        private static void PrintMenu()
-        {
-            Console.WriteLine("********** Menu  **********************");
-            Console.WriteLine("-1. Clear Screen");
-            Console.WriteLine("0.  Exit");
-            Console.WriteLine("1.  Creational Patterns");
-            Console.WriteLine("2.  Structural Patterns");
-            Console.WriteLine("3.  Behavioral Patterns");
-            Console.WriteLine("***************************************");
         }
 
         private static void PrintCreationalPatternMenu()
         {
             Console.WriteLine("\t********** Creational Patterns **********");
+            Console.WriteLine("\t-1. Clear Screen");
             Console.WriteLine("\t0.  Back to Main menu");
             Console.WriteLine("\t1.  Abstract Factory Pattern");
             Console.WriteLine("\t2a. Factory Method Pattern with DI");
@@ -71,6 +102,9 @@ namespace Vishnu.Patterns.ConsoleTest
                 choice = Console.ReadLine();
                 switch(choice)
                 {
+                    case "-1":
+                        Console.Clear();
+                        break;
                     case "1":
                         Console.Write("Abstract Factory Pattern.....");
                         AbstratFactoryPatternTest.Perform();
@@ -98,6 +132,7 @@ namespace Vishnu.Patterns.ConsoleTest
         private static void PrintBehavioralPatternMenu()
         {
             Console.WriteLine("\t**********  Behavioural Pattern **********");
+            Console.WriteLine("\t-1. Clear Screen");
             Console.WriteLine("\t0.  Back to Main menu");
             Console.WriteLine("\t***************************************");
         }
@@ -112,6 +147,9 @@ namespace Vishnu.Patterns.ConsoleTest
                 choice = Console.ReadLine();
                 switch (choice)
                 {
+                    case "-1":
+                        Console.Clear();
+                        break;
                     default:
                         break;
                 }
@@ -121,6 +159,7 @@ namespace Vishnu.Patterns.ConsoleTest
         private static void PrintStructuralPatternMenu()
         {
             Console.WriteLine("\t**********  Structural Pattern **********");
+            Console.WriteLine("\t-1. Clear Screen");
             Console.WriteLine("\t0.  Back to Main menu");
             Console.WriteLine("\t1.  Adapter Pattern");
             Console.WriteLine("\t2.  Bridge Pattern");
@@ -139,6 +178,9 @@ namespace Vishnu.Patterns.ConsoleTest
                 choice = Console.ReadLine();
                 switch (choice)
                 {
+                    case "-1":
+                        Console.Clear();
+                        break;
                     case "1":
                         Console.Write("Adapter Pattern.....");
                         AdapterPatternTest.Perform();
