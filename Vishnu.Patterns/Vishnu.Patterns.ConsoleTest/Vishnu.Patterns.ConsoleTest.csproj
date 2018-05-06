@@ -75,6 +75,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GOF\Structural\FacadePatternTest.cs" />
     <Compile Include="GOF\Structural\DecoratorPatternTest.cs" />
     <Compile Include="GOF\Structural\CompositePatternTest.cs" />
     <Compile Include="GOF\Structural\BridgePatternTest.cs" />
@@ -115,6 +116,10 @@
     <ProjectReference Include="..\DecoratorPattern\DecoratorPattern.csproj">
       <Project>{1dc04196-791c-4da1-bf2b-d5e9ebd836a1}</Project>
       <Name>DecoratorPattern</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FacadePattern\FacadePattern.csproj">
+      <Project>{c1d083b5-f902-4e2e-8bcb-74cf51d51a77}</Project>
+      <Name>FacadePattern</Name>
     </ProjectReference>
     <ProjectReference Include="..\FactoryMethodPattern\FactoryMethodPattern.csproj">
       <Project>{98fd3759-f249-416c-89bf-54459bd4f310}</Project>
