@@ -75,6 +75,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GOF\Structural\ProxyPatternTest.cs" />
     <Compile Include="GOF\Structural\FacadePatternTest.cs" />
     <Compile Include="GOF\Structural\DecoratorPatternTest.cs" />
     <Compile Include="GOF\Structural\CompositePatternTest.cs" />
@@ -128,6 +129,10 @@
     <ProjectReference Include="..\PrototypePattern\PrototypePattern.csproj">
       <Project>{99612c90-30e9-448d-9a9b-249e98513a8b}</Project>
       <Name>PrototypePattern</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProxyPatten\ProxyPatten.csproj">
+      <Project>{2289bde1-162a-403d-a60f-d11eae338867}</Project>
+      <Name>ProxyPatten</Name>
     </ProjectReference>
     <ProjectReference Include="..\SingletonPattern\SingletonPattern.csproj">
       <Project>{e868bff9-4cfb-41e9-a8c4-fdb09927186f}</Project>

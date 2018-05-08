@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{20936A98-A2A4-49F6-8929-574DA9AC402C}</ProjectGuid>
+    <ProjectGuid>{2289BDE1-162A-403D-A60F-D11EAE338867}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Vishnu.Patterns.Structural.AdapterPattern</RootNamespace>
-    <AssemblyName>Vishnu.Patterns.Structural.AdapterPattern</AssemblyName>
+    <RootNamespace>Vishnu.Patterns.Structural.ProxyPattern</RootNamespace>
+    <AssemblyName>Vishnu.Patterns.Structural.ProxyPattern</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,20 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adaptee\PlasticToyDuck.cs" />
-    <Compile Include="Adaptee\Sparrow.cs" />
-    <Compile Include="Adapter\BirdAdapter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Target\IBird.cs" />
-    <Compile Include="Target\IToyDuck.cs" />
+    <Compile Include="Proxy\ForexProviderProxy.cs" />
+    <Compile Include="RealSubject\ForexProvider.cs" />
+    <Compile Include="Subject\IForexProvider.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Details.txt" />
-    <Content Include="ParticipantsAdapterPattern.JPG" />
-    <Content Include="UML_AdapterPattern.JPG" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Clinet\" />
+    <Content Include="ParticipantsProxyPattern.PNG" />
+    <Content Include="UML_ProxyPattern.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

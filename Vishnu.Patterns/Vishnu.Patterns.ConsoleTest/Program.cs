@@ -125,7 +125,7 @@ namespace Vishnu.Patterns.ConsoleTest
                         Console.WriteLine("Prototype pattern...");
                         PrototypePatternTest.Perform();
                         break;
-                }
+                  }
             } while (choice != "0");
         }
 
@@ -166,6 +166,7 @@ namespace Vishnu.Patterns.ConsoleTest
             Console.WriteLine("\t3.  Composite Pattern");
             Console.WriteLine("\t4.  Decorator Pattern");
             Console.WriteLine("\t5.  Facade Pattern");
+            Console.WriteLine("\t6.  Proxy Pattern");
             Console.WriteLine("\t***************************************");
         }
 
@@ -201,6 +202,10 @@ namespace Vishnu.Patterns.ConsoleTest
                     case "5":
                         Console.WriteLine("Facade Pattern....");
                         FacadePatternTest.Perform();
+                        break;
+                    case "6":
+                        Console.WriteLine("Proxy Pattern...");
+                        ProxyPatternTest.Perform();
                         break;
                 }
             } while (choice != "0");
