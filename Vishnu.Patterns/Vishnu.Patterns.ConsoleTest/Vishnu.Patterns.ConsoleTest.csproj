@@ -75,6 +75,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GOF\Behavioral\ChainOfResponsibilityPatternTest.cs" />
     <Compile Include="GOF\Structural\ProxyPatternTest.cs" />
     <Compile Include="GOF\Structural\FacadePatternTest.cs" />
     <Compile Include="GOF\Structural\DecoratorPatternTest.cs" />
@@ -110,6 +111,10 @@
       <Project>{3cb8ac7e-9f34-485f-8796-0d2f752bd806}</Project>
       <Name>BuilderPattern</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ChainOfResponsibilityPattern\ChainOfResponsibilityPattern.csproj">
+      <Project>{e27fc4be-df3c-453e-ae99-9a763bc38159}</Project>
+      <Name>ChainOfResponsibilityPattern</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CompositePattern\CompositePattern.csproj">
       <Project>{7442a1a3-18ed-416e-9dcc-487b068f2c6f}</Project>
       <Name>CompositePattern</Name>
@@ -139,6 +144,7 @@
       <Name>SingletonPattern</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -134,6 +134,7 @@ namespace Vishnu.Patterns.ConsoleTest
             Console.WriteLine("\t**********  Behavioural Pattern **********");
             Console.WriteLine("\t-1. Clear Screen");
             Console.WriteLine("\t0.  Back to Main menu");
+            Console.WriteLine("\t1.  Chain of Responsibilit");
             Console.WriteLine("\t***************************************");
         }
 
@@ -149,6 +150,10 @@ namespace Vishnu.Patterns.ConsoleTest
                 {
                     case "-1":
                         Console.Clear();
+                        break;
+                    case "1":
+                        Console.WriteLine("Chain of responsibility pattern...");
+                        ChainOfResponsibilityPatternTest.Perform();
                         break;
                     default:
                         break;
